@@ -6,15 +6,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Docusaurus Boilerplate',
-  tagline: 'Dinosaurs are cool',
-  url: 'http://docusaurus-boilerplate.vercel.app',
+  title: 'WeiXuefeng Doc',
+  tagline: 'document',
+  url: 'https://doc.newb.club',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'arisac', // Usually your GitHub org/user name.
-  projectName: 'docusaurus-boilerplate', // Usually your repo name.
+  organizationName: 'weixuefeng', // Usually your GitHub org/user name.
+  projectName: 'pony doc', // Usually your repo name.
 
   i18n: {
     defaultLocale: 'en',
@@ -83,7 +83,7 @@ const config = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/arisac/docusaurus-boilerplate/edit/main/',
+          editUrl: 'https://github.com/weixuefeng/docs/edit/main/blog/andverse/index.md',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
@@ -91,7 +91,7 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/arisac/docusaurus-boilerplate/edit/main/blog/',
+            'https://github.com/weixuefeng/docs/edit/main/blog/andverse/index.md',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
@@ -118,7 +118,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/arisac/docusaurus-boilerplate',
+            href: 'https://github.com/weixuefeng/docs',
             label: 'GitHub',
             position: 'right',
           },
