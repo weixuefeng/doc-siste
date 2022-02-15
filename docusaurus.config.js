@@ -104,10 +104,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Docusaurus Boilerplate',
+        title: 'My Blog',
         logo: {
-          alt: 'Docusaurus Logo',
-          src: 'img/logo.svg',
+          alt: 'My Blog Logo',
+          src: 'img/logo.jpg',
         },
         items: [
           {
@@ -117,6 +117,7 @@ const config = {
             label: 'Let\'s Start',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/about', label: 'About', position: 'left'},
           {
             href: 'https://github.com/weixuefeng/docs',
             label: 'GitHub',
