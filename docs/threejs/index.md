@@ -1,3 +1,13 @@
+---
+Author: pony@diynova.com
+Date: 2021-11-25 23:50:41
+LastEditors: pony@diynova.com
+LastEditTime: 2022-02-16 00:41:45
+FilePath: /notes/docs/threejs/index.md
+Description: 
+---
+
+# Three.js
 # [Three JS DOC](http://www.hewebgl.com/article/getarticle/50)
 
 ## 三大组件

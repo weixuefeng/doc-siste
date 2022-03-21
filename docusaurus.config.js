@@ -117,7 +117,7 @@ const config = {
             label: 'Let\'s Start',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/about', label: 'About', position: 'left'},
+          // {to: '/about', label: 'About', position: 'left'},
           {
             href: 'https://github.com/weixuefeng/docs',
             label: 'GitHub',
@@ -146,15 +146,15 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: 'https://stackoverflow.com/users/17753974/xuefeng-wei',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/EMfpfVGJHv',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/weixuefeng7',
               },
             ],
           },
@@ -167,12 +167,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/weixuefeng',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Docusaurus Boilerplate. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} weixuefeng. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
