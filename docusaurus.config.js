@@ -16,10 +16,10 @@ const config = {
   organizationName: 'weixuefeng', // Usually your GitHub org/user name.
   projectName: 'pony doc', // Usually your repo name.
 
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
-  },
+  // i18n: {
+  //   defaultLocale: 'en',
+  //   locales: ['en', 'fr'],
+  // },
 
   plugins: [
     'docusaurus-plugin-sass',
@@ -55,7 +55,7 @@ const config = {
       indexPages: true,
 
       // language of your documentation, see next section
-      language: ["en", "fr"],
+      // language: ["en", "fr"],
 
       // setting this to "none" will prevent the default CSS to be included. The default CSS
       // comes from autocomplete-theme-classic, which you can read more about here:
