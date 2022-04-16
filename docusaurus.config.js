@@ -104,17 +104,17 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Blog',
+        title: 'Nothing',
         logo: {
-          alt: 'My Blog Logo',
-          src: 'img/logo.jpg',
+          alt: 'Nothing',
+          src: 'https://avatars.githubusercontent.com/u/25627103?v=4',
         },
         items: [
           {
             type: 'doc',
             docId: 'start',
             position: 'left',
-            label: 'Let\'s Start',
+            label: 'Category',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           // {to: '/about', label: 'About', position: 'left'},
@@ -136,7 +136,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Let\'s Start',
+                label: 'Category',
                 to: '/',
               },
             ],
