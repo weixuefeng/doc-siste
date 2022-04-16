@@ -15,7 +15,7 @@ This is a French doc for demonstration purpose, docs are not fully translated.
 
 A live demo build directly from this repository is deployed on [docusaurus-boilerplate.vercel.app](https://docusaurus-boilerplate.vercel.app) which means you can start a docs site exactly like the demo out of the box.
 
-You are viewing the latest version of the template demo and neccessary docs to help you quickly start a docs site. Try browse around this site to see the pre-configed features, full feature list can be find under [Boilerplate Features](./features.md)
+You are viewing the latest version of the template demo and neccessary docs to help you quickly start a docs site. Try browse around this site to see the pre-configed features, full feature list can be find under 
 
 ## Quick Start this Template
 
@@ -65,11 +65,6 @@ I believe you are ready to setup this template for your own use. Here's some wel
 
 This will guide you through necessary changes required to make this website as you desired, like change the site name, add/remove languanges etc.:
 
-- [Basic Configurations](./quick-setup/basic.md)
-- [Use A Homepage](./quick-setup/use-homepage.md)
-- [Turn Off Blog](./quick-setup/turn-off-blog.md)
-- [Translate Site](./quick-setup/translate-site.md)
-- [Deploy Your Site](./quick-setup/deploy.md)
 
 ## Extras
 
