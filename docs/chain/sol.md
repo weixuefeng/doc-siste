@@ -1,5 +1,70 @@
 # sol 相关文档
 
+## SOL NonceAccount 使用
+
+创建 Nonce 账户
+
+```javascript
+let account = Keypair.fromSecretKey(Uint8Array.from(a));
+let nonceAccount = Keypair.fromSecretKey(Uint8Array.from(b));
+//   // Get Minimum amount for rent exemption
+let minimumAmount = await connection.getMinimumBalanceForRentExemption(
+    NONCE_ACCOUNT_LENGTH,
+);
+
+// Form CreateNonceAccount transaction
+let transaction = new Transaction().add(
+SystemProgram.createNonceAccount({
+    fromPubkey: account.publicKey,
+    noncePubkey: nonceAccount.publicKey,
+    authorizedPubkey: account.publicKey,
+    lamports: minimumAmount,
+}),
+);
+// Create Nonce Account
+var sig = await sendAndConfirmTransactio(
+    connection, 
+    transaction, 
+    [
+        account,
+        nonceAccount,
+    ]
+);
+```
+
+使用 nonce 账户发送交易
+
+```javascript
+let account = Keypair.fromSecretKey(Uint8Array.from(a));
+let nonceAccount = Keypair.fromSecretKey(Uint8Array.from(b));
+
+const ix = SystemProgram.transfer({
+    fromPubkey: account.publicKey,
+    toPubkey: account.publicKey,
+    lamports: toLamports(0.01),
+});
+const advanceIX = SystemProgram.nonceAdvance({
+    authorizedPubkey: account.publicKey,
+    noncePubkey: nonceAccount.publicKey,
+});
+
+const tx = new Transaction();
+
+tx.add(advanceIX);
+tx.add(ix);
+
+const accountInfo = await connection.getAccountInfo(nonceAccount.publicKey);
+const nonceAccountInfo = NonceAccount.fromAccountData(accountInfo.data);
+
+tx.recentBlockhash =  nonceAccountInfo.nonce;
+tx.feePayer = account.publicKey;
+tx.sign(account)
+var sig = await sendAndConfirmTransaction(connection, tx, [
+    nonceAccount,
+    account,
+]);
+console.log("sig:",sig)
+```
 
 ## 发送流程检查
 
@@ -28,6 +93,5 @@
         6. 直接发送
 
 
-
-sol 最低账户租期费用： https://solana.com/docs/more/exchange#minimum-deposit-withdrawal-amounts
+- sol 最低账户租期费用： https://solana.com/docs/more/exchange#minimum-deposit-withdrawal-amounts
 
